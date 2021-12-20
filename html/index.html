@@ -6,11 +6,16 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500;900&display=swap"
+        rel="stylesheet">
     <style>
         body {
             margin: 0px;
             background-color: rgb(217, 85, 80);
             color: #fff;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            font-weight: 300;
         }
 
         .container {
@@ -29,12 +34,9 @@
             margin-bottom: 40px;
         }
 
-        .header a {
-            padding: 15px;
-        }
-
         .logo {
-            margin-right: 250px;
+            margin-right: 230px;
+            font-weight: 900;
         }
 
         .timer {
@@ -44,6 +46,7 @@
             border: solid 1px;
             border-radius: 10px;
             margin-bottom: 70px;
+            background-color: lightcoral;
         }
 
         .tasks {
@@ -53,6 +56,27 @@
             border: solid 1px;
             border-radius: 10px;
             margin-bottom: 30px;
+            background-color: lightcoral;
+        }
+
+        .headerButton {
+            font-size: 0.8em;
+            text-decoration: none;
+            color: #fff;
+            background-color: lightcoral;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .iconTask {
+            margin-right: 5px;
+        }
+
+        .iconReport {
+            margin-right: 5px;
         }
     </style>
 </head>
@@ -60,10 +84,19 @@
 <body>
     <div class="container">
         <div class="header">
+            <span class="material-icons iconTask">task_alt</span>
             <a class="logo">My Pomodoro</a>
-            <a>Report</a>
-            <a>Setting</a>
-            <a>Logging</a>
+            <a class="headerButton" href="#">
+                <span class="material-icons inconReport">insert_chart</span>
+                <span>Report</span>
+            </a>
+            <a class="headerButton" href="#">
+                <span class="material-icons inconReport">settings</span>
+                <span>Setting</span>
+            </a>
+            <a class="headerButton" href="#">
+                <span class="material-icons inconReport">account_circle</span>
+                <span>Login</span></a>
         </div>
         <div class="timer">
         </div>
