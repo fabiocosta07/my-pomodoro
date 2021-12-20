@@ -50,29 +50,28 @@
             border: solid 1px;
             border-radius: 10px;
             margin-bottom: 70px;
-            background-color: lightcoral;
+            background-color: rgba(255, 255, 255, 0.1);
         }
 
-        .tasks {
+        .task {
             width: 480px;
             height: 312px;
             margin: 2vh;
             border: solid 1px;
             border-radius: 10px;
             margin-bottom: 30px;
-            background-color: lightcoral;
         }
 
         .headerButton {
             font-size: 0.8em;
             text-decoration: none;
             color: #fff;
-            background-color: lightcoral;
             margin: 5px;
             padding: 5px;
             border-radius: 5px;
             display: flex;
             align-items: center;
+            background-color: rgba(255, 255, 255, 0.1);
         }
 
         .iconTask {
@@ -121,6 +120,44 @@
             background-color: rgb(217, 85, 80);
 
         }
+
+        .task {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .taskHeader {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            min-width: 100%;
+            border-bottom: 1px solid;
+        }
+
+        .taskList {
+            display: flex;
+            justify-content: center;
+            min-width: 100%;
+            border: solid 1px;
+            background-color: #fff;
+        }
+
+        .taskButton {
+            display: flex;
+            justify-content: center;
+            min-width: 100%;
+            border: solid 1px;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .taskSummary {
+            display: flex;
+            justify-content: center;
+            min-width: 100%;
+            border: solid 1px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
     </style>
 </head>
 
@@ -150,7 +187,20 @@
             <label>25:00</label>
             <a class="timerButton">START</a>
         </div>
-        <div class="tasks">
+        <div class="task">
+            <div class="taskHeader">
+                <label>Tasks</label>
+                <a>Menu</a>
+            </div>
+            <div class="taskList">
+                <div class="taskItem"><a>Task item</a></div>
+            </div>
+            <div class="taskButton">
+                <a>Add Task</a>
+            </div>
+            <div class="taskSummary">
+                <label>task summary</label>
+            </div>
         </div>
     </div>
 </body>
