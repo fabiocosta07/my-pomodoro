@@ -109,6 +109,18 @@
             border-radius: 5px;
             padding: 20px 40PX;
         }
+
+        .tabButton {
+            padding: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .tabButtonActive {
+            background-color: rgb(217, 85, 80);
+
+        }
     </style>
 </head>
 
@@ -131,9 +143,9 @@
         </div>
         <div class="timer">
             <div class="timerTab">
-                <a class="tabButton">Pomodoro</a>
-                <a class="tabButton">Short Break</a>
-                <a class="tabButton">Long Break</a>
+                <a class="tabButton" onclick="activateTab('Pomodoro')" href="#">Pomodoro</a>
+                <a class="tabButton" onclick="activateTab('Short Break')" href="#">Short Break</a>
+                <a class="tabButton" onclick="activateTab('Long Break')" href="#">Long Break</a>
             </div>
             <label>25:00</label>
             <a class="timerButton">START</a>
@@ -143,7 +155,15 @@
     </div>
 </body>
 <script>
-
+    function activateTab(tab) {
+        for (let element of document.getElementsByClassName('tabButton')) {
+            if (element.innerHTML.includes(tab)) {
+                element.classList.add('tabButtonActive')
+            } else {
+                element.classList.remove('tabButtonActive')
+            }
+        }
+    }
 </script>
 
 </html>
