@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500;900&display=swap"
         rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0px;
             background-color: rgb(217, 85, 80);
@@ -78,6 +82,33 @@
         .iconReport {
             margin-right: 5px;
         }
+
+        .timer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .timer label {
+            margin: 70px;
+        }
+
+        .timerTab {
+            margin-top: 15px;
+        }
+
+        .timerTab a {
+            margin: 20px;
+        }
+
+        .timerButton {
+            margin-top: 30px;
+            color: lightcoral;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px 40PX;
+        }
     </style>
 </head>
 
@@ -99,6 +130,13 @@
                 <span>Login</span></a>
         </div>
         <div class="timer">
+            <div class="timerTab">
+                <a class="tabButton">Pomodoro</a>
+                <a class="tabButton">Short Break</a>
+                <a class="tabButton">Long Break</a>
+            </div>
+            <label>25:00</label>
+            <a class="timerButton">START</a>
         </div>
         <div class="tasks">
         </div>
