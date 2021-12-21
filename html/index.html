@@ -138,18 +138,33 @@
             border-bottom: 1px solid;
         }
 
-        .taskList {
+        .taskList {}
+
+        .taskItem {
             background-color: #fff;
+            min-width: 100%;
+            border-radius: 5px;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+        .taskItem a {
+            color: #000;
         }
 
         .taskButton {
             background-color: rgba(0, 0, 0, 0.1);
             border: 2px dashed rgba(255, 255, 255, 0.4);
+            border-radius: 5px;
         }
 
         .taskSummary {
             border-top: 1px solid #fff;
             background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .icon-white {
+            filter: invert(1);
         }
     </style>
 </head>
@@ -183,16 +198,20 @@
         <div class="task">
             <div class="taskComponent taskHeader">
                 <label>Tasks</label>
-                <a>Menu</a>
+                <a><span class="material-icons">menu</span></a>
             </div>
             <div class="taskComponent taskList">
-                <div class="taskItem"><a>Task item</a></div>
+                <div class="taskComponent taskItem">
+                    <span class="material-icons icon-white">task_alt</span>
+                    <a> Task item</a>
+                    <span class="material-icons icon-white">menu</span>
+                </div>
             </div>
             <div class="taskComponent taskButton">
                 <a>Add Task</a>
             </div>
             <div class="taskComponent taskSummary">
-                <label>task summary</label>
+                <label>Task summary</label>
             </div>
         </div>
     </div>
