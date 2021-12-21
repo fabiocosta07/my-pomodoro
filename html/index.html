@@ -47,7 +47,6 @@
             width: 480px;
             height: 312px;
             margin: 2vh;
-            border: solid 1px;
             border-radius: 10px;
             margin-bottom: 70px;
             background-color: rgba(255, 255, 255, 0.1);
@@ -57,7 +56,6 @@
             width: 480px;
             height: 312px;
             margin: 2vh;
-            border: solid 1px;
             border-radius: 10px;
             margin-bottom: 30px;
         }
@@ -127,35 +125,30 @@
             align-items: center;
         }
 
-        .taskHeader {
+        .taskComponent {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
             min-width: 100%;
+            margin: 5px;
+        }
+
+        .taskHeader {
+            justify-content: space-between;
             border-bottom: 1px solid;
         }
 
         .taskList {
-            display: flex;
-            justify-content: center;
-            min-width: 100%;
-            border: solid 1px;
             background-color: #fff;
         }
 
         .taskButton {
-            display: flex;
-            justify-content: center;
-            min-width: 100%;
-            border: solid 1px;
             background-color: rgba(0, 0, 0, 0.1);
+            border: 2px dashed rgba(255, 255, 255, 0.4);
         }
 
         .taskSummary {
-            display: flex;
-            justify-content: center;
-            min-width: 100%;
-            border: solid 1px;
+            border-top: 1px solid #fff;
             background-color: rgba(255, 255, 255, 0.1);
         }
     </style>
@@ -188,17 +181,17 @@
             <a class="timerButton">START</a>
         </div>
         <div class="task">
-            <div class="taskHeader">
+            <div class="taskComponent taskHeader">
                 <label>Tasks</label>
                 <a>Menu</a>
             </div>
-            <div class="taskList">
+            <div class="taskComponent taskList">
                 <div class="taskItem"><a>Task item</a></div>
             </div>
-            <div class="taskButton">
+            <div class="taskComponent taskButton">
                 <a>Add Task</a>
             </div>
-            <div class="taskSummary">
+            <div class="taskComponent taskSummary">
                 <label>task summary</label>
             </div>
         </div>
