@@ -1,3 +1,12 @@
-body {
-  margin: 0;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0px;
+    background-color: rgb(217, 85, 80);
+    color: #fff;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 300;
+}
+

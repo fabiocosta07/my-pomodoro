@@ -1,0 +1,36 @@
+.header {
+    width: 620px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: solid 1px;
+    margin-bottom: 40px;
+}
+
+.logo {
+    margin-right: 230px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #fff;
+}
+
+.headerButton {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #fff;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.iconTask {
+    margin-right: 5px;
+}
+
+.iconReport {
+    margin-right: 5px;
+}
