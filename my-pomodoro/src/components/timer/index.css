@@ -30,3 +30,15 @@
     border-radius: 5px;
     padding: 20px 40PX;
 }
+
+.tabButton {
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.tabButtonActive {
+    background-color: rgb(217, 85, 80);
+
+}
