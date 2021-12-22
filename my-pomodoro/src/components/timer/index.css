@@ -1,0 +1,32 @@
+.timer {
+    width: 480px;
+    height: 312px;
+    margin: 2vh;
+    border-radius: 10px;
+    margin-bottom: 70px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.timer label {
+    margin: 70px;
+}
+
+.timerTab {
+    margin-top: 15px;
+}
+
+.timerTab a {
+    margin: 20px;
+}
+
+.timerButton {
+    margin-top: 30px;
+    color: lightcoral;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 40PX;
+}
