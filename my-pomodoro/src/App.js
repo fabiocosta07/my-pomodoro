@@ -1,14 +1,17 @@
 import './App.css';
-import Header from './components/header';
-import Timer from './components/timer';
-import Task from './components/task';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/home';
+import Test from './pages/test';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <Timer></Timer>
-      <Task></Task>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="test" element={<Test/> } />
+      </Routes>
+    </BrowserRouter>     
     </div>
   );
 }
